@@ -1,0 +1,3 @@
+DIFERENCA = (A * B - C * D)
+
+print("DIFERENCA =",DIFERENCA)
