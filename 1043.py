@@ -13,3 +13,10 @@ A entrada contém três valores reais.
 Saída
 O resultado deve ser apresentado com uma casa decimal.
 '''
+a,b,c = map(float, input().split())
+if (b - c ) < a < b + c and (a - c) < b < a + c and (a - b) < c < a + b:
+    perimetro = a+b+c
+    print('Perimetro = {:.1f}'.format(perimetro))
+else:
+    area_trap = ((a+b)*c)/2
+    print('Area = {:.1f}'.format(area_trap))
