@@ -7,3 +7,16 @@ Leia três valores de ponto flutuante (double) A, B e C.
 Saída
 Se não houver possibilidade de calcular as raízes, apresente a mensagem "Impossivel calcular". Caso contrário, imprima o resultado das raízes com 5 dígitos após o ponto, com uma mensagem correspondente conforme exemplo abaixo. Imprima sempre o final de linha após cada mensagem.
 '''
+import math
+a,b,c = map(float, input().split())
+
+delta = (b*b) - 4*a*c
+if delta < 0:
+    print('Impossivel calcular')
+elif a == 0:
+    print('Impossivel calcular')
+else:
+    x1 = ((b*-1) + math.sqrt(delta))/(2*a)
+    x2 = ((b*-1) - math.sqrt(delta))/(2*a)
+    print('R1 = {:.5f}'.format(x1))
+    print('R2 = {:.5f}'.format(x2))
